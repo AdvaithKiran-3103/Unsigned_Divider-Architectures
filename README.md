@@ -10,7 +10,7 @@ The objective of this project is to design, simulate, and compare different hard
 
 ---
 
-## Project Overview
+## Overview
 
 Division is one of the more hardware-expensive arithmetic operations in digital design. This project implements unsigned division using three different architectures, each with different trade-offs in terms of latency, throughput, and hardware cost.
 
@@ -40,12 +40,6 @@ The default operand width used in this project is:
 
 ### 1. Unsigned Subtractive Divider
 
-Module:
-
-```systemverilog
-Unsigned_Subtractive_Divider
-```
-
 This divider performs division using repeated subtraction. The divisor is repeatedly subtracted from the dividend until the remaining value is smaller than the divisor.
 
 #### Working Principle
@@ -72,12 +66,6 @@ For `Ain / Bin`:
 ---
 
 ### 2. Unsigned Restoring Divider
-
-Module:
-
-```systemverilog
-Unsigned_Restoring_Divider
-```
 
 This divider implements the restoring division algorithm. It performs one division iteration per clock cycle and produces the quotient and remainder after a fixed number of cycles.
 
@@ -107,10 +95,6 @@ For each bit of the dividend:
 ### 3. Unsigned Pipelined Restoring Divider
 
 Module:
-
-```systemverilog
-Unsigned_Pipeline_Restoring_Divider
-```
 
 This divider implements a fully pipelined version of the restoring division algorithm. Each pipeline stage performs one restoring division iteration.
 
