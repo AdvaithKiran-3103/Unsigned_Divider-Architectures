@@ -94,8 +94,6 @@ For each bit of the dividend:
 
 ### 3. Unsigned Pipelined Restoring Divider
 
-Module:
-
 This divider implements a fully pipelined version of the restoring division algorithm. Each pipeline stage performs one restoring division iteration.
 
 #### Algorithm
