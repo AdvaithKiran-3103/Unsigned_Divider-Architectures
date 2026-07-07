@@ -42,7 +42,7 @@ The default operand width used in this project is:
 
 This divider performs division using repeated subtraction. The divisor is repeatedly subtracted from the dividend until the remaining value is smaller than the divisor.
 
-#### Working Principle
+#### Algorithm
 
 For `Ain / Bin`:
 
@@ -69,7 +69,7 @@ For `Ain / Bin`:
 
 This divider implements the restoring division algorithm. It performs one division iteration per clock cycle and produces the quotient and remainder after a fixed number of cycles.
 
-#### Working Principle
+#### Algorithm
 
 For each bit of the dividend:
 
@@ -98,7 +98,7 @@ Module:
 
 This divider implements a fully pipelined version of the restoring division algorithm. Each pipeline stage performs one restoring division iteration.
 
-#### Working Principle
+#### Algorithm
 
 The restoring division operation is split across multiple pipeline stages. For a `WIDTH`-bit divider, the design uses `WIDTH` stages. Each stage performs one partial remainder update and quotient bit decision.
 
