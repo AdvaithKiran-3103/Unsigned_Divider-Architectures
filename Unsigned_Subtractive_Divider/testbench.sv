@@ -13,7 +13,7 @@ module testbench;
     logic out_valid;
     logic busy;
         
-    Unsigned_Restoring_Divider DIV (.clk(clk), 
+    Unsigned_Subtractive_Divider DIV (.clk(clk), 
                                       .rst(rst), 
                                       .inp_valid(inp_valid), 
                                       .Ain(Ain), 
